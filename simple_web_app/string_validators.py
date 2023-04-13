@@ -57,6 +57,7 @@ class EspecialCharacterValidator(Validator):
         self.especial_set = set(punctuation)
         self.especial_set.remove("^")
         self.especial_set.remove("/")
+        self.especial_set.remove("~")
 
     def validate(self, content):
         content_set = set(content)
