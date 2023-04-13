@@ -58,7 +58,6 @@ class EspecialCharacterValidator(Validator):
         self.especial_set.remove("^")
         self.especial_set.remove("/")
 
-
     def validate(self, content):
         content_set = set(content)
         if self.especial_set.isdisjoint(content_set):
